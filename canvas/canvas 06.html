@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<canvas id="myCanvas" width="700" height="450" 
+			style="border:1px solid #000000;"></canvas>
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+
+			// Create gradient
+			var grd = ctx.createRadialGradient(100, 100, 100, 100, 100, 0);
+			grd.addColorStop(0,"white");
+			grd.addColorStop(1,"blue");
+
+			// Fill with gradient
+			ctx.fillStyle = grd;
+			ctx.fillRect(0,0,200,200);
+		
+		</script>
+	</body>
+</html> 

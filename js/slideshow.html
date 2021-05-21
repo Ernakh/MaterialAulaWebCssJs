@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function slide1(){
+document.getElementById('id').src="cthulhu-1.jpg";
+setTimeout("slide2()", 3000)
+}
+function slide2(){
+document.getElementById('id').src="cthulhu-2.jpg";
+setTimeout("slide3()", 3000)
+}
+function slide3(){
+document.getElementById('id').src="cthulhu-3.jpg";
+setTimeout("slide1()", 3000)
+}
+</script>
+</head>
+<body onLoad="slide1()">
+Troca automatica conforme o passar do tempo! :D
+</br>
+<a><img id="id"></a>
+</body>
+</html>

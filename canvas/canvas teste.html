@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <canvas id="myCanvas" width="700" height="450" style="border:1px solid #000000;"></canvas>
+	<br/>
+	X:<input id="x" type="text"/>
+	Y:<input id="y" type="text" />
+	<input type="button" onclick="teste();" value="Desenhar!"/>
+
+	
+	<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(5,5);
+			ctx.lineTo(100,12);
+			ctx.stroke();
+			
+			function teste()
+			{
+				var x = document.getElementById('x').value;
+				var y = document.getElementById('y').value;
+				
+				ctx.lineTo(x,y);
+				ctx.stroke();
+			}
+
+		</script>
+  </body>
+</html> 

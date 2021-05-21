@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+	<img id="cthulhu" src="cthulhu.jpg" alt="cthulhu" width="300" height="300">
+		<canvas id="myCanvas" width="700" height="450" 
+					style="border:1px solid #000000;">
+		</canvas>
+		<script>
+		window.onload = function() {
+
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			var img = document.getElementById("cthulhu");
+			ctx.drawImage(img,10,10);
+		};
+		</script>
+	</body>
+</html> 

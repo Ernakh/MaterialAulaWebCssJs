@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <title></title>
+    <style type="text/css">
+.xdiv{
+background: #F00;
+width: 20px;
+height: 20px;
+position: absolute;
+top: 0px;
+left: 0px;
+animation: 10s kick infinite;
+border-radius: 50%;
+}
+@keyframes kick
+{
+0% {left: 20px; top: 0px; 
+	animation-timing-function: cubic-bezier(0.965, 0.040, 1.000, 0.970); 
+}
+75% {left: 20px; top: 200px; 
+	transition-timing-function: cubic-bezier(0.005, 0.975, 1.000, 0.970);
+     }
+100% {left: 20px; top: 0px; 
+	animation-timing-function: cubic-bezier(0.965, 0.040, 1.000, 0.970);
+}}
+</style>
+</head>
+<body>
+    <div class="xdiv">
+    </div>
+</body>
+</html>
